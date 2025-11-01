@@ -8,7 +8,7 @@ import (
 
 func main() {
 	const (
-		webDir = "web"
+		webDir = "docs"
 		addr   = ":8080"
 	)
 

@@ -1,4 +1,4 @@
-WEB_DIR := web
+WEB_DIR := docs
 WASM_OUT := $(WEB_DIR)/main.wasm
 WASM_EXEC := $(WEB_DIR)/wasm_exec.js
 GOCACHE := $(CURDIR)/.cache/go-build
