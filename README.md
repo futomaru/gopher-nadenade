@@ -26,7 +26,7 @@ make serve
 - `wasm` — ブラウザ側のロジック（Go -> WASM）
 - `web` — 配信する静的ファイル（`make wasm` の成果物を含む）
 
-## 
+## Gopher illustrations
 > Gopher illustrations by Egon Elbre (https://github.com/egonelbre/gophers) ,
 > based on the Go gopher designed by Renee French.
 > Licensed under the Creative Commons Attribution 3.0 License (CC BY 3.0).
