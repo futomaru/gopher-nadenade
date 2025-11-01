@@ -5,14 +5,43 @@
   <title>Pet the Gopher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
-      display: grid;
-      place-items: center;
-      height: 100vh;
-      margin: 0;
-      background: #f6fbff;
-      font-family: system-ui, sans-serif;
-    }
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #edf4f8;
+    font-family: system-ui, sans-serif;
+  }
+
+  #app {
+    width: min(90vw, 360px);
+  }
+
+  footer {
+    width: 100%;
+    background: #dfe7ee;
+    color: #394455;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 12px 0;
+  }
+
+  footer div {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  footer a {
+    color: inherit;
+  }
   </style>
 </head>
 <body>
@@ -27,9 +56,9 @@
 </body>
 <footer>
   <div>
-  Gopher illustrations by Egon Elbre (https://github.com/egonelbre/gophers),<br>
-  based on the Go gopher designed by Renee French. <br>
-  Licensed under the Creative Commons Attribution 3.0 License (CC BY 3.0).<br>
+    Gopher illustrations by <a href="https://github.com/egonelbre/gophers" rel="noreferrer noopener">Egon Elbre</a>,<br>
+    based on the Go gopher designed by Renee French.<br>
+    Licensed under the Creative Commons Attribution 3.0 License (CC BY 3.0).
   </div>
 </footer>
 </html>

@@ -11,8 +11,8 @@ import (
 //go:embed source/gopher_neutral.svg
 var neutralSVG []byte
 
-//go:embed source/gopher_smile.svg
-var smileSVG []byte
+//go:embed source/gopher_love.svg
+var loveSVG []byte
 
 func main() {
 	done := make(chan struct{})
@@ -27,12 +27,12 @@ func main() {
 	img.Call("setAttribute", "style", "cursor:pointer;max-width:90vw;height:auto;")
 
 	neutral := dataURI(neutralSVG)
-	smiling := dataURI(smileSVG)
+	love := dataURI(loveSVG)
 
 	img.Set("src", neutral)
 
 	onOver := js.FuncOf(func(this js.Value, args []js.Value) any {
-		img.Set("src", smiling)
+		img.Set("src", love)
 		return nil
 	})
 	defer onOver.Release()
